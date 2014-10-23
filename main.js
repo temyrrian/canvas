@@ -7,21 +7,6 @@ $('document').ready(function(){
   var casino_element_arr =  document.getElementsByClassName('casino_element');
   var canvas = new fabric.Canvas('canvas');
   var counter = 0;
-  $('#button_start').show('slow').click(function(){
-
-
-      setTimeout(function(){
-              canvas.add( img_1, img_2, img_3)
-
-              mainAnimate();
-          },
-          100);
-
-
-  })
-
-
-
     var img_1 = new fabric.Image(casino_element_arr[(Math.floor(Math.random() * 13))], {
         left: 250,
         top: 100,
@@ -130,9 +115,15 @@ counter++;
       }
     }, 1000)
     animate_intervavl;
-
 }
 
+    $('#button_start').show('slow').click(function(){
+        setTimeout(function(){
+                canvas.add( img_1, img_2, img_3)
+                mainAnimate();
+            },
+            100);
+    })
 
 });
 
