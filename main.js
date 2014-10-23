@@ -25,7 +25,6 @@ $('document').ready(function(){
         selectable: false
     });
 
-
      function doFinalAnimation(){
         img_1.left = 800;
         img_2.left = 750;
